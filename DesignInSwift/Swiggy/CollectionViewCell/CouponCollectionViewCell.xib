@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CouponCollectionViewCell" customModule="DesignInSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="131" height="149"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="131" height="149"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mFo-d1-JGO">
+                        <rect key="frame" x="0.0" y="0.0" width="131" height="149"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coupon1.png" translatesAutoresizingMaskIntoConstraints="NO" id="MxS-yl-6AK">
+                                <rect key="frame" x="0.0" y="0.0" width="131" height="149"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MxS-yl-6AK" secondAttribute="trailing" id="MA0-5i-fe8"/>
+                            <constraint firstItem="MxS-yl-6AK" firstAttribute="top" secondItem="mFo-d1-JGO" secondAttribute="top" id="PUi-zM-Q49"/>
+                            <constraint firstItem="MxS-yl-6AK" firstAttribute="leading" secondItem="mFo-d1-JGO" secondAttribute="leading" id="Uwv-N4-1wH"/>
+                            <constraint firstAttribute="bottom" secondItem="MxS-yl-6AK" secondAttribute="bottom" id="ylA-5u-tWx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="mFo-d1-JGO" secondAttribute="trailing" id="5mG-kb-p85"/>
+                <constraint firstItem="mFo-d1-JGO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Nse-Dv-HaW"/>
+                <constraint firstItem="mFo-d1-JGO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ppL-fN-SXe"/>
+                <constraint firstAttribute="bottom" secondItem="mFo-d1-JGO" secondAttribute="bottom" id="qOI-gJ-2tP"/>
+            </constraints>
+            <size key="customSize" width="131" height="149"/>
+            <connections>
+                <outlet property="iconImage" destination="MxS-yl-6AK" id="BDJ-Dj-UZC"/>
+            </connections>
+            <point key="canvasLocation" x="99.275362318840592" y="113.50446428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="coupon1.png" width="274" height="328"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

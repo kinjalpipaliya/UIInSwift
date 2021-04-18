@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PopularBrandCollectionViewCell" customModule="DesignInSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="202"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="202"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UsI-Sf-Xss">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dominos.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="QTQ-jH-x8a">
+                                <rect key="frame" x="6" y="6" width="137" height="137"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="137" id="t8R-0Q-O0C"/>
+                                    <constraint firstAttribute="width" secondItem="QTQ-jH-x8a" secondAttribute="height" multiplier="1:1" id="xd2-kk-A9s"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="QTQ-jH-x8a" secondAttribute="trailing" constant="7" id="5Tb-Hk-IXh"/>
+                            <constraint firstItem="QTQ-jH-x8a" firstAttribute="top" secondItem="UsI-Sf-Xss" secondAttribute="top" constant="6" id="IuL-Fa-JHZ"/>
+                            <constraint firstAttribute="width" constant="150" id="SRw-PS-oEB"/>
+                            <constraint firstItem="QTQ-jH-x8a" firstAttribute="leading" secondItem="UsI-Sf-Xss" secondAttribute="leading" constant="6" id="Tqt-zb-GTk"/>
+                            <constraint firstAttribute="width" secondItem="UsI-Sf-Xss" secondAttribute="height" multiplier="1:1" id="lM9-il-1eX"/>
+                            <constraint firstAttribute="bottom" secondItem="QTQ-jH-x8a" secondAttribute="bottom" constant="7" id="mNR-5R-lJc"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="jTR-Iy-Iwf">
+                        <rect key="frame" x="0.0" y="163" width="150" height="32.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Domino's Pizza" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLs-Zy-DrY">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35 mins" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kN5-5J-otE">
+                                <rect key="frame" x="0.0" y="18" width="150" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="UsI-Sf-Xss" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3lb-NP-lMm"/>
+                <constraint firstItem="jTR-Iy-Iwf" firstAttribute="leading" secondItem="UsI-Sf-Xss" secondAttribute="leading" id="68Z-tG-eDE"/>
+                <constraint firstAttribute="bottom" secondItem="jTR-Iy-Iwf" secondAttribute="bottom" constant="6.5" id="6OU-Mz-tKU"/>
+                <constraint firstItem="UsI-Sf-Xss" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Emw-ET-Pkz"/>
+                <constraint firstItem="jTR-Iy-Iwf" firstAttribute="trailing" secondItem="UsI-Sf-Xss" secondAttribute="trailing" id="c1s-VR-Buj"/>
+                <constraint firstAttribute="trailing" secondItem="UsI-Sf-Xss" secondAttribute="trailing" id="eEZ-Xb-xrC"/>
+                <constraint firstItem="jTR-Iy-Iwf" firstAttribute="top" secondItem="UsI-Sf-Xss" secondAttribute="bottom" constant="13" id="mZg-eM-t6u"/>
+                <constraint firstItem="UsI-Sf-Xss" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="uti-dn-PvB"/>
+            </constraints>
+            <size key="customSize" width="150" height="202"/>
+            <connections>
+                <outlet property="backView" destination="UsI-Sf-Xss" id="8Hy-d2-q1T"/>
+                <outlet property="backgroundImage" destination="QTQ-jH-x8a" id="7zo-JL-CVb"/>
+                <outlet property="restaurantLabel" destination="fLs-Zy-DrY" id="BI9-vp-oTy"/>
+                <outlet property="timeLabel" destination="kN5-5J-otE" id="DIj-cV-ikM"/>
+            </connections>
+            <point key="canvasLocation" x="-55.072463768115945" y="66.964285714285708"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="dominos.jpeg" width="1023" height="721"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

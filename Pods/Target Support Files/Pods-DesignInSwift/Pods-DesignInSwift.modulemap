@@ -1,0 +1,6 @@
+framework module Pods_DesignInSwift {
+  umbrella header "Pods-DesignInSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

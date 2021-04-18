@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="239" id="KGk-i7-Jjw" customClass="CuisinesTableViewCell" customModule="DesignInSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="239"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="340" height="239"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oMD-NT-Kl9">
+                        <rect key="frame" x="0.0" y="0.0" width="340" height="239"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popular cuisines around you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVT-qn-Ui7">
+                                <rect key="frame" x="15" y="15" width="310" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="bcj-zv-xaa">
+                                <rect key="frame" x="15" y="46" width="310" height="177"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="177" id="MGW-eY-UJx"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="I0h-30-Vw0">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <connections>
+                                    <outlet property="dataSource" destination="KGk-i7-Jjw" id="53b-oQ-hzp"/>
+                                    <outlet property="delegate" destination="KGk-i7-Jjw" id="w0s-5f-4QH"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vVT-qn-Ui7" firstAttribute="top" secondItem="oMD-NT-Kl9" secondAttribute="top" constant="15" id="8EA-WT-Jye"/>
+                            <constraint firstItem="bcj-zv-xaa" firstAttribute="leading" secondItem="oMD-NT-Kl9" secondAttribute="leading" constant="15" id="8dw-Pm-pmu"/>
+                            <constraint firstItem="bcj-zv-xaa" firstAttribute="top" secondItem="vVT-qn-Ui7" secondAttribute="bottom" constant="10" id="LiD-3F-PKk"/>
+                            <constraint firstAttribute="trailing" secondItem="vVT-qn-Ui7" secondAttribute="trailing" constant="15" id="TCj-lA-1iX"/>
+                            <constraint firstAttribute="trailing" secondItem="bcj-zv-xaa" secondAttribute="trailing" constant="15" id="Zax-SO-K7L"/>
+                            <constraint firstAttribute="bottom" secondItem="bcj-zv-xaa" secondAttribute="bottom" constant="16" id="e1V-d7-nV1"/>
+                            <constraint firstItem="vVT-qn-Ui7" firstAttribute="leading" secondItem="oMD-NT-Kl9" secondAttribute="leading" constant="15" id="rOI-7H-Gu8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="oMD-NT-Kl9" secondAttribute="bottom" id="1IX-bg-0yl"/>
+                    <constraint firstItem="oMD-NT-Kl9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fQr-de-xMf"/>
+                    <constraint firstItem="oMD-NT-Kl9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="iaa-t3-RPa"/>
+                    <constraint firstAttribute="trailing" secondItem="oMD-NT-Kl9" secondAttribute="trailing" id="sOb-n9-Oix"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cuisinesCollectionView" destination="bcj-zv-xaa" id="SwO-Uv-A3C"/>
+            </connections>
+            <point key="canvasLocation" x="146.37681159420291" y="130.91517857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
