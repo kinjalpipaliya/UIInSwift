@@ -6,24 +6,22 @@
 //
 
 import UIKit
+import SnapKit
 
 class GooglePayBaseViewController: UIViewController {
-
+    
+    @IBOutlet var popUpView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        initialSetup()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func initialSetup() {
+        self.popUpView.snp.makeConstraints { (make) in
+            make.left.right.equalToSuperview()
+            make.top.equalTo(self.view.snp.bottom).offset(-((self.view.frame.height/3))+2)
+            make.height.equalTo (400)
+        }
     }
-    */
-
 }

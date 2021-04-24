@@ -37,7 +37,6 @@ class GooglePayViewController: UIViewController, UITableViewDelegate, UITableVie
             cell.exploreImage.isHidden = true
             cell.exploreLabel.isHidden = true
         }
-        
         return cell
     }
 }
